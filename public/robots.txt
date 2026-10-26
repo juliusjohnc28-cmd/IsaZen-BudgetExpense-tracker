@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://my-budget-tracker-dp6-e4i.pages.dev/sitemap.xml

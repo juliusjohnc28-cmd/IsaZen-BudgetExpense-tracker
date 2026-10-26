@@ -1,0 +1,10 @@
+# Cloudflare Pages config. Deploy with:  npx wrangler pages deploy
+name = "my-budget-tracker-dp6"
+pages_build_output_dir = "./public"
+compatibility_date = "2025-09-01"
+
+# Google blocks Gemini calls that come from some regions (error: "User location is not supported").
+# By default a Pages Function runs in the Cloudflare data center nearest the visitor (e.g. Manila / Hong Kong),
+# which Google may reject. This runs the function in a data center closest to a US Google Cloud region instead.
+[placement]
+region = "gcp:us-central1"
